@@ -14,12 +14,64 @@ This involves modifying your project's `Cargo.toml` file to include the `pallet-
 ### 2. Interact with `pallet-utility`
 Use the **Polkadot-JS Apps UI** (the explorer) to create and sign a batch extrinsic. You'll need to construct a series of `balances.transfer` calls and then wrap them in a `utility.batch` call. This will transfer funds to multiple wallets in a single transaction.
 
+
+## How to run 
+
+### Prerequisites
+
+Completed the Install [Polkadot SDK Dependencies](https://docs.polkadot.com/develop/parachains/install-polkadot-sdk/) guide and successfully installed [Rust](https://www.rust-lang.org/) and the required packages to set up your development environment
+
+
+### Step 1:  Install `polkadot-omni-node`
+
+```sh
+cargo install --locked polkadot-omni-node@0.5.0
+```
+
+### Step 2:  Install `staging-chain-spec-builder`
+
+```sh
+cargo install --locked staging-chain-spec-builder@10.0.0
+```
+
+### Step 3:  Build both node & runtime
+
+```sh
+cargo build --workspace --release
+```
+
+### Step 4: Use chain-spec-builder to generate the chain_spec.json file
+
+```sh
+chain-spec-builder create --relay-chain "dev" --para-id 1000 --runtime \
+    target/release/wbuild/parachain-template-runtime/parachain_template_runtime.wasm named-preset development
+```
+
+
+### Step 5: Run Omni Node
+
+Start Omni Node in development mode (sets up block production and finalization based on manual seal,
+sealing a new block every 3 seconds), with a minimal template runtime chain spec.
+
+```sh
+polkadot-omni-node --chain chain_spec.json --dev
+```
+
+## Hint 
+
+- `TODO : Enable pallet-utility in polkadot-sdk`
+- `TODO : Add Utility Pallet here with index 51`
+- `TODO : Implement pallet_utility::Config for Runtime` 
+
 ## 📤 How to Submit
 
 You'll need to create a Pull Request (PR) that includes two things:
 
 1. **Link to the code** that has been modified to include the `pallet-utility`
-2. **Video recording** that demonstrates the successful execution of the batch transfer using the Polkadot-JS Apps UI
+2. **Video recording** that demonstrates the successful execution of the batch transfer using the Polkadot-JS Apps UI (https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#)
+
+> **Note:** You need to import Alice's account to Polkadot JS's account or wallet extension like Subwallet, PolkadotJS Extension 
+
 
 ## 📚 Related Lessons
 
@@ -36,7 +88,7 @@ The lesson focuses on understanding and implementing custom runtime logic, with 
 - [Batch Transactions Guide](https://www.youtube.com/watch?v=uoUC2K8muvw)
 - [How to add pallet to runtime](https://docs.polkadot.com/develop/parachains/customize-parachain/add-existing-pallets/)
 - [Pallet Utility](https://github.com/paritytech/polkadot-sdk/tree/master/substrate/frame/utility)
-
+- [Subwallet](https://www.subwallet.app/download.html)
 
 ## 🔗 Basic step to integrate `pallet-utility` to runtime in real application
 

@@ -14,6 +14,11 @@ Make sure you have finished **Challenge 2: Auction System** before proceeding.
 ### 1. Implement additional auction removal
 The `remove_auction` function allows for the removal of a specific auction from storage. This is typically used to clean up auctions that have concluded or been canceled.
 
+
+## Hint 
+- `TODO - Implement remove_auction extrinsic - make sure that you are finished challenge 2 and 3`
+- `TODO - Increase the spec version to 2 ` 
+
 ## 📤 How to Submit
 
 You'll need to create a Pull Request (PR) containing two key items:

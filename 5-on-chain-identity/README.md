@@ -32,4 +32,5 @@ You'll need to submit a Pull Request (PR) containing three key components:
 - [Polkadot API to interact with runtime pallet](https://papi.how/)
 - [@polkadot/api](https://www.npmjs.com/package/@polkadot/api)
 - [Create dot app](https://github.com/preschian/create-dot-app)
+- [Dedot](https://docs.dedot.dev/)
     

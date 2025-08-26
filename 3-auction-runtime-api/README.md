@@ -25,6 +25,11 @@ You'll need to create a Pull Request (PR) containing two key items:
 2. **Video recording:** A video that demonstrates the following:
    - Showing the correct auction information (bidder, amount, end time, etc.) being returned from the API call from Polkadot JS explorer
 
+## Hint
+- `TODO: Complete auction information structure`
+- `TODO - Define Auction Runtime API` 
+- `TODO: Implement runtime API for auction pallet`
+
 ## 📚 Related Lessons
 
 This challenge is directly related to **Lesson 3.8 - "Runtime API"**. The lesson covers how to define and implement a Runtime API to expose custom functionality from your Substrate node to off-chain clients.

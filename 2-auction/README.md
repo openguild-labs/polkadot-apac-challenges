@@ -53,6 +53,17 @@ impl<T: Config> Hooks<BlockNumberFor<T>> for Pallet<T> {
 }
 ```
 
+### 6. Mock Runtime and Unit Tests 
+
+## Hint 
+
+- `TODO: Implement Auction Pallet`
+- `TODO: Implement pallet_auction::Config for Runtime `
+
+## How to run parachain template
+
+For detailed setup instructions, see [Challenge 1: Batch Transactions](../1-batch-transaction/README.md#how-to-run).
+
 ## 📤 How to Submit
 
 You'll need to create a Pull Request (PR) containing three key items:
