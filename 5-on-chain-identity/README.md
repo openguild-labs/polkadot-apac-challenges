@@ -25,12 +25,16 @@ You'll need to submit a Pull Request (PR) containing three key components:
 2. **Link to the deployed dApp:** A link to a live version of the dApp, likely deployed on a platform like Vercel, so that it can be tested directly
 3. **Video recording:** A video demonstrating the entire process of connecting a wallet, registering an on-chain identity, and then viewing that identity information on the dApp
 
+> **Note:** Faucet Paseo People Link: https://faucet.polkadot.io/?parachain=1004
+
+
+
 ## 🔗 Resources
 
 - [Identity](https://docs.moonbeam.network/builders/substrate/interfaces/account/identity/)
 - [How to register on-chain identity on People Chain](https://wiki.polkadot.com/learn/learn-guides-identity/)
 - [Polkadot API to interact with runtime pallet](https://papi.how/)
 - [@polkadot/api](https://www.npmjs.com/package/@polkadot/api)
-- [Create dot app](https://github.com/preschian/create-dot-app)
+- [Create dot app template](https://github.com/preschian/create-dot-app)
 - [Dedot](https://docs.dedot.dev/)
     

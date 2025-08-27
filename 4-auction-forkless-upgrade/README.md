@@ -28,6 +28,15 @@ You'll need to create a Pull Request (PR) containing two key items:
    - Showing how to do fork-less upgrade runtime
    - Performing the `remove_auction` on Polkadot JS Explorer
 
+> **Note:** You need to import Alice's account aka Sudo key to Polkadot JS's account or wallet extension like Subwallet, PolkadotJS Extension 
+> **Note:** Alice's Private Key: 0xe5be9a5092b81bca64be81d212e7f2f9eba183bb7a90954f7b76361f6edb5c0a
+> **Note:** Do not use Alice's Private Key on Production
+
+
+## How to run parachain template
+
+For detailed setup instructions, see [Challenge 1: Batch Transactions](../1-batch-transaction/README.md#how-to-run).
+
 ## 📚 Related Lessons
 
 This challenge is directly related to:
@@ -37,3 +46,4 @@ This challenge is directly related to:
 ## 🔗 Resources
 
 - [Runtime Upgrade Tutorial](https://docs.polkadot.com/tutorials/polkadot-sdk/parachains/zero-to-hero/runtime-upgrade/)
+- [How to forkless upgrade runtime](https://www.youtube.com/watch?v=k9TgTuRRTZ0)

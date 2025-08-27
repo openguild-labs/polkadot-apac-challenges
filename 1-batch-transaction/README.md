@@ -70,8 +70,9 @@ You'll need to create a Pull Request (PR) that includes two things:
 1. **Link to the code** that has been modified to include the `pallet-utility`
 2. **Video recording** that demonstrates the successful execution of the batch transfer using the Polkadot-JS Apps UI (https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#)
 
-> **Note:** You need to import Alice's account to Polkadot JS's account or wallet extension like Subwallet, PolkadotJS Extension 
-
+> **Note:** You need to import Alice's account aka Sudo key to Polkadot JS's account or wallet extension like Subwallet, PolkadotJS Extension 
+> **Note:** Alice's Private Key: 0xe5be9a5092b81bca64be81d212e7f2f9eba183bb7a90954f7b76361f6edb5c0a
+> **Note:** Do not use Alice's Private Key on Production
 
 ## 📚 Related Lessons
 

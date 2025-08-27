@@ -30,6 +30,11 @@ You'll need to create a Pull Request (PR) containing two key items:
 - `TODO - Define Auction Runtime API` 
 - `TODO: Implement runtime API for auction pallet`
 
+## How to run parachain template
+
+For detailed setup instructions, see [Challenge 1: Batch Transactions](../1-batch-transaction/README.md#how-to-run).
+
+
 ## 📚 Related Lessons
 
 This challenge is directly related to **Lesson 3.8 - "Runtime API"**. The lesson covers how to define and implement a Runtime API to expose custom functionality from your Substrate node to off-chain clients.
