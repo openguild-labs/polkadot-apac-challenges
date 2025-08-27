@@ -91,6 +91,10 @@ The lesson focuses on understanding and implementing custom runtime logic, with 
 - [Pallet Utility](https://github.com/paritytech/polkadot-sdk/tree/master/substrate/frame/utility)
 - [Subwallet](https://www.subwallet.app/download.html)
 
+
+> **Note:** If you dont want to use this template , you can use `POP` instead
+- [Pop](https://learn.onpop.io/chains/guides/create-a-new-parachain) 
+
 ## 🔗 Basic step to integrate `pallet-utility` to runtime in real application
 
 - [Step 1 - Import pallet into runtime/Cargo.toml](https://github.com/peaqnetwork/peaq-network-node/blob/dev/runtime/peaq/Cargo.toml#L61)

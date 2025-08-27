@@ -47,3 +47,6 @@ This challenge is directly related to:
 
 - [Runtime Upgrade Tutorial](https://docs.polkadot.com/tutorials/polkadot-sdk/parachains/zero-to-hero/runtime-upgrade/)
 - [How to forkless upgrade runtime](https://www.youtube.com/watch?v=k9TgTuRRTZ0)
+
+> **Note:** If you dont want to use this template , you can use `POP` instead
+- [Pop](https://learn.onpop.io/chains/guides/create-a-new-parachain) 

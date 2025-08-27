@@ -75,7 +75,7 @@ You'll need to create a Pull Request (PR) containing three key items:
    - Placing multiple bids from different accounts to show the logic working on Polkadot JS explorer
    - Waiting for the auction to finalize automatically using the `on_finalize` hook and showing the final state on Polkadot JS explorer
 
-   
+
 > **Note:** You need to import Alice's account aka Sudo key to Polkadot JS's account or wallet extension like Subwallet, PolkadotJS Extension 
 > **Note:** Alice's Private Key: 0xe5be9a5092b81bca64be81d212e7f2f9eba183bb7a90954f7b76361f6edb5c0a
 > **Note:** Do not use Alice's Private Key on Production
@@ -91,4 +91,8 @@ This challenge is directly related to **Lesson 3.7 - "Hooks"**. The lesson cover
 - [Block Production](https://docs.polkadot.com/polkadot-protocol/parachain-basics/blocks-transactions-fees/blocks/#block-production)
 - [Official Docs - Parity](https://paritytech.github.io/polkadot-sdk/master/polkadot_sdk_frame/traits/trait.Hooks.html)
 - [Real Integration](https://github.com/UniqueNetwork/unique-chain/blob/develop/pallets/app-promotion/src/lib.rs#L266)
+
+> **Note:** If you dont want to use this template , you can use `POP` instead
+- [Pop](https://learn.onpop.io/chains/guides/create-a-new-parachain) 
+
 

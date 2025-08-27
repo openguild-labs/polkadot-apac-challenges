@@ -46,3 +46,6 @@ This challenge is directly related to **Lesson 3.8 - "Runtime API"**. The lesson
 - [Runtime API Videos](https://www.youtube.com/watch?v=BTz39Kzlv-U&list=PLnhzaKpksqOKiqu9DDjGnmZWB0hYTaOUC&index=9)
 - [Runtime API OpenGuild](https://bootcamp.openguild.wtf/building-a-blockchain-with-polkadot-sdk/polkadot-sdk/substrate/runtime-api-and-rpc)
 - [Real case](https://github.com/KILTprotocol/kilt-node/tree/develop/runtime-api)
+
+> **Note:** If you dont want to use this template , you can use `POP` instead
+- [Pop](https://learn.onpop.io/chains/guides/create-a-new-parachain) 
