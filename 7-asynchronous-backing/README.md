@@ -15,7 +15,45 @@ You must first set up a standard parachain with a **12-second block time target*
 Simultaneously, you'll need a relay chain to connect your parachain to.
 
 ### 3. Enable Asynchronous Backing
+
+Always add **#[cfg(feature = "async-backing")]** when you add codes to enable the `Async Backing` Feature
+
+For example: 
+```rust
+#[cfg(feature = "async-backing")]
+use crate::{constants::SLOT_DURATION, types::ConsensusHook};
+```
+
+
 The core task is to modify the parachain's configuration to enable asynchronous backing and set its block time target to **6 seconds**.
+
+
+## How to run 
+
+### Step 1: Set up default toolchain for compatible version 
+
+```
+rustup default nightly-2024-06-12
+```
+### Step 2: Set up Zombienet - Install relaychain 
+
+```bash
+./scripts/zombienet.sh build 
+```
+
+
+
+### Step 3: After enable `Async Backing` Feature , build the project
+
+```bash
+cargo build --release --features async-backing
+```
+
+### Step 4: Run zombienet 
+
+```bash
+./scripts/zombienet.sh devnet
+```
 
 ## 📤 How to Submit
 
@@ -31,3 +69,6 @@ This challenge is directly tied to **Lesson 5.4 - "Introduction to Asynchronous 
 ## 🔗 Resources
 
 - [Moonbeam Asynchronous Backing Implementation](https://github.com/moonbeam-foundation/moonbeam/pull/2776)
+- [Official Guide](https://paritytech.github.io/polkadot-sdk/master/polkadot_sdk_docs/guides/async_backing_guide/index.html)
+- [Wiki](https://wiki.polkadot.com/learn/learn-async-backing/)
+- [Official Async Backing](https://docs.polkadot.com/develop/parachains/maintenance/configure-asynchronous-backing/)

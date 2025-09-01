@@ -8,7 +8,10 @@ Configure parachain runtime for elastic scaling with increased block processing 
 
 ## 🎯 Requirements
 
-### 1. Enable Asynchronous Backing
+### 1. Enable Asynchronous Backing - Finish Challenge 7 
+
+> **Note:** Using Async Backing Codebase from Challenge 7
+
 Elastic scaling is an extension of asynchronous backing. You must first ensure your parachain has asynchronous backing enabled. This involves configuring the `pallet_aura` to allow multiple blocks per slot and adjusting the `MILLIS_PER_BLOCK` to match the relay chain's slot time (typically 6 seconds).
 
 ### 2. Configure Runtime Parameters
@@ -18,7 +21,7 @@ Modify your parachain's `runtime/src/lib.rs` to support elastic scaling. This in
 - **Setting the `UNINCLUDED_SEGMENT_CAPACITY`** constant to a value greater than `2 * MAX_BLOCK_PROCESSING_VELOCITY + 1`. This parameter helps manage the queue of unincluded blocks.
 
 ### 3. Start a Relay Chain
-You must start a local relay chain (e.g., using `polkadot-launch` or `zombienet`) that is compatible with elastic scaling.
+You must start a local relay chain (e.g., using `zombienet`) that is compatible with elastic scaling.
 
 ### 4. Start a Parachain
 You must start your modified parachain node and connect it to the relay chain, demonstrating that it successfully registers and begins producing blocks at an increased velocity.
