@@ -58,6 +58,6 @@ git commit -m "<Your Name> | Register for OpenGuild Da Nang Hackcamp 2025"
 | 3 | Auction Runtime API - Extend auction system with custom Runtime API for off-chain data access | [Take Challenge](./3-auction-runtime-api/README.md) |
 | 4 | Auction Forkless Upgrade - Implement auction removal functionality and demonstrate forkless upgrades | [Take Challenge](./4-auction-forkless-upgrade/README.md) |
 | 5 | On-chain Identity DApp - Build a dApp for registering and displaying on-chain identities on Paseo testnet | [Take Challenge](./5-on-chain-identity/README.md) |
-| 6 | NFT XCM - Create a dApp that mints NFTs on Asset Hub using XCM messages from Paseo testnet | [Take Challenge](./6-nft-xcm/README.md) |
+| 6 | XCM - Create a dApp that transfer NATIVE assets from Paseo testnet to parachain | [Take Challenge](./6-xcm/README.md) |
 | 7 | Asynchronous Backing - Enable asynchronous backing on a parachain with 6-second block time | [Take Challenge](./7-asynchronous-backing/README.md) |
 | 8 | Elastic Scaling - Configure parachain runtime for elastic scaling with increased block processing velocity | [Take Challenge](./8-elastic-scaling/README.md) |
